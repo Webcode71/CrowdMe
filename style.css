@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding-left: 10%;
+    padding-right: 10%;
+    max-height: 1000px;
+}
+
+header ul {
+    padding-top: 18px;
+    margin: auto;
+    margin-top: 0;
+    list-style-type: none;
+}
+
+header li {
+    display: inline;
+    padding-right: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+header li:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.header_login_button {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #d5dfa3;
+    border-radius: 30px;
+    padding: 10px 30px;
+    background-color: #d5dfa3;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.header_login_button:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.banner {
+    position: relative;
+    background-color: gray;
+}
+
+.banner_content {
+    position: absolute;
+    margin: auto;
+    top: 31%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+
+.banner_photo {
+    width: 100%;
+    opacity: 71%;
+}
+
+.banner_title {
+    padding-top: 170px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+}
+
+.banner_banana {
+    padding-top: 17px;
+    padding-bottom: 45px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+}
+
+.become_a_member {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    border: 1px solid #98b524;
+    border-radius: 8px;
+    padding: 20px 40px;
+    background-color: #98b524;
+    margin: auto;
+}
+
+.become_a_member:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.shedule_up {
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+
+@media screen and (max-width: 991px) {
+    header li:hover {
+        transform: scale(1.2);
+        transform: translateX(10px);
+        transition: 0.5s;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .banner_title {
+        padding-top: 88px;
+        font-size: 32px;
+    }
+
+    .banner_banana {
+        font-size: 23px;
+        padding-top: 13px;
+        padding-bottom: 22px;
+    }
+
+    .become_a_member {
+        font-size: 17px;
+        padding: 14px 30px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .navbar {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .header_logo {
+        width: 90%;
+    }
+
+    .banner_title {
+        font-size: 22px;
+        padding-top: 50px;
+    }
+
+    .banner_banana {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .become_a_member {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+}
+
+@media screen and (max-width: 397px) {
+    .banner_title {
+        padding-top: 30px;
+        font-size: 15px;
+    }
+
+    .banner_banana {
+        font-size: 12px;
+        padding-top: 7px;
+        padding-bottom: 10px;
+    }
+
+    .become_a_member {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
