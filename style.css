@@ -3,9 +3,15 @@
     padding: 0;
 }
 
+body {
+    min-width: 320px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
 .navbar {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
     max-height: 1000px;
 }
 
@@ -34,6 +40,10 @@ header li:hover {
 
 .nav-link:active {
     transform: scale(1.1);
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 .header_login_button {
@@ -234,6 +244,7 @@ header li:hover {
 }
 
 .find_section {
+    position: relative;
     padding-top: 20px;
     margin-top: 80px;
 }
@@ -277,6 +288,8 @@ header li:hover {
 }
 
 .find_section1_button {
+    position: absolute;
+    bottom: 15px;
     color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -285,11 +298,10 @@ header li:hover {
     padding: 15px 23px;
     background-color: #3fb1d7;
     margin: auto;
-    margin-bottom: 15px;
 }
 
 .find_section1_button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
@@ -298,10 +310,12 @@ header li:hover {
 }
 
 .find_section1_button:active {
-    transform: scale(1.1);
+    transform: scale(1.0);
 }
 
 .find_section2_button {
+    position: absolute;
+    bottom: 15px;
     color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -313,7 +327,7 @@ header li:hover {
 }
 
 .find_section2_button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
@@ -322,10 +336,202 @@ header li:hover {
 }
 
 .find_section2_button:active {
-    transform: scale(1.1);
+    transform: scale(1.0);
 }
 
-@media screen and (max-width: 991px) {
+.become_button {
+    float: right;
+    color: grey;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 15px 23px;
+    margin: auto;
+    margin-top: 70px;
+    margin-left: 150px;
+    background-color: white;
+}
+
+.become_button:hover {
+    color: white;
+    border-color: #98b524;
+    background-color: #98b524;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.become_button:focus {
+    outline: none;
+}
+
+.become_button:active {
+    transform: scale(1.0);
+}
+
+.card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.featured_projects .card {
+    border: none;
+}
+
+.featured_projects h1 {
+    padding-top: 40px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    font-size: 29px;
+    color: grey;
+}
+
+.featured_projects p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    color: grey;
+}
+
+.projects .card {
+    border-radius: calc(1rem - 1px);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.projects .card-body {
+    background-color: #f5f9eb;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.projects h5 {
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: grey;
+}
+
+.projects p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: grey;
+}
+
+.progress {
+    border-radius: 1rem;
+}
+
+.progress-bar {
+    background-color: #98b524;
+}
+
+.progressbar_container {
+    padding-bottom: 10px;
+}
+
+.days_left {
+    float: right;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: grey;
+}
+
+.funded {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: grey;
+}
+
+.card-footer a {
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: grey;
+    float: right;
+    padding: 10px 10px 10px 0px;
+}
+
+.project_details_img {
+    position: relative;
+    padding-left: 10px;
+}
+
+.projects a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.projects a:active {
+    transform: scale(1.0);
+}
+
+.card_img_new {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.img_button {
+    position: relative;
+}
+
+.price_button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    border: 1px solid #3fb1d7;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: auto;
+    background-color: #3fb1d7;
+}
+
+.price_button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.price_button:focus {
+    outline: none;
+}
+
+.price_button:active {
+    transform: scale(1.0);
+}
+
+.community_container {
+    background-image: url(Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.community_title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: #98b524;
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.community_paragraph {
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    color: grey;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+
+@media screen and (max-width: 992px) {
     header li:hover {
         transform: scale(1.2);
         transform: translateX(10px);
@@ -429,6 +635,23 @@ header li:hover {
         padding-right: 5%;
         font-size: 17px;
     }
+
+    .featured_projects h1 {
+        font-size: 23px;
+    }
+
+    .featured_projects p {
+        font-size: 17px;
+    }
+
+    .projects .card-body {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .card-footer a {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -471,9 +694,18 @@ header li:hover {
     .find_section p {
         padding-right: 7%;
     }
+
+    .projects .card-body {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    .card-footer a {
+        font-size: 13px;
+    }
 }
 
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 575px) {
     .navbar {
         padding-left: 3%;
         padding-right: 3%;
@@ -582,9 +814,27 @@ header li:hover {
     }
 
     .find_section1_button,
-    .find_section2_button {
+    .find_section2_button,
+    .become_button {
         font-size: 14px;
         padding: 10px 20px;
+    }
+
+    .featured_projects h1 {
+        font-size: 20px;
+    }
+
+    .featured_projects p {
+        font-size: 14px;
+    }
+
+    .become_button {
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+
+    .featured_projects h1 {
+        padding-top: 20px;
     }
 }
 
@@ -692,8 +942,17 @@ header li:hover {
     }
 
     .find_section1_button,
-    .find_section2_button {
+    .find_section2_button,
+    .become_button {
         font-size: 12px;
         padding: 8px 16px;
     }
-}
+
+    .become_button {
+        margin-left: 10px;
+        margin-top: 130px;
+    }
+
+    .featured_projects h1 {
+        padding-top: 20px;
+    }
